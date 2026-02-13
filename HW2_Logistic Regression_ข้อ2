@@ -1,0 +1,9 @@
+Use this dataset to explain the process of Stochastic Gradient Descent (SGD) step by step. 
+จำนวนข้อมูล = 27 กลุ่ม
+SGD คือการ loop ข้อมูลที่ละกลุ่มตัวอย่าง โดยไม่ได้ทำพร้อมกันทั้ง dataset 
+setp 1 : เลือกข้อมูล 1 ชุด (1 row)
+step 2 : นำข้อมูลนั้นไปคำนวณค่าทำนาย แล้วใช้ sigmoid แปลงค่าที่ได้ให้เป็นค่าที่อยู่ในช่วงระหว่าง 0-
+Step 3 : หาความerror ระหว่างYจริงกับYทำนาย
+Step 4 : ปรับค่า weight และ bias ทันที โดยดูจากerrorกับlr
+Step 5 : loopจนครบ27ครั้ง(เท่ากับจำนวนชุดข้อมูลที่มี) ครบ1ครั้ง=1epoch
+จากcode python การปรับ epochต้องrelateกับlrด้วย ต่อให้epochหลายๆรอบ ไม่ได้หมายความว่า modelจะทำนายได้แม่นขึ้น ถ้ามันตันที่outputนั้น
